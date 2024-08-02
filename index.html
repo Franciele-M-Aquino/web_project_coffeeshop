@@ -108,12 +108,12 @@
           <h2 class="reservation__title">Reservar uma mesa</h2>
           <form class="reservation__form">
             <fieldset class="reservation__fieldset">
-              <label for="name" class="form__label">Nome *</label>
+              <label for="name" class="reservation__label">Nome *</label>
               <input
                 type="text"
                 name="name"
                 placeholder="Nome"
-                class="form__input"
+                class="reservation__input"
                 id="name"
                 required
               />
@@ -126,7 +126,7 @@
                 max="8"
                 name="guestnumber"
                 placeholder="1-8"
-                class="form__input"
+                class="reservation__input"
                 id="guestnumber"
                 required
               />
@@ -134,7 +134,7 @@
               <input
                 type="datetime-local"
                 name="date"
-                class="form__input"
+                class="reservation__input"
                 id="date"
                 required
               />
@@ -142,20 +142,20 @@
               <input
                 type="email"
                 name="email"
-                class="form__input"
+                class="reservation__input"
                 id="email"
                 placeholder="email@email.com"
                 required
               />
-              <button type="submit" class="form__button">
+              <button type="submit" class="reservation__button">
                 Reservar uma mesa
               </button>
-              <div class="form__checkbox">
-                <label class="form__checkbox-label" for="checkbox"
+              <div class="reservation__checkbox">
+                <label class="reservation__checkbox-label" for="checkbox"
                   >Eu concordo com os termos de uso</label
                 >
                 <input
-                  class="form__checkbox-input"
+                  class="reservation__checkbox-input"
                   type="checkbox"
                   name="checkbox"
                   id="checkbox"
