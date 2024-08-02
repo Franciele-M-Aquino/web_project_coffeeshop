@@ -103,16 +103,17 @@
             </li>
           </ul>
         </section>
+
         <section id="reservation" class="reservation">
           <h2 class="reservation__title">Reservar uma mesa</h2>
-          <form>
-            <fieldset class="reservation__form">
+          <form class="reservation__form">
+            <fieldset class="form__fieldset">
               <label for="name" class="form__label">Nome *</label>
               <input
                 type="text"
                 name="name"
                 placeholder="Nome"
-                class="form__item"
+                class="form__input"
                 id="name"
                 required
               />
@@ -125,7 +126,7 @@
                 max="8"
                 name="guestnumber"
                 placeholder="1-8"
-                class="form__item"
+                class="form__input"
                 id="guestnumber"
                 required
               />
@@ -133,7 +134,7 @@
               <input
                 type="datetime-local"
                 name="date"
-                class="form__item"
+                class="form__input"
                 id="date"
                 required
               />
@@ -141,7 +142,7 @@
               <input
                 type="email"
                 name="email"
-                class="form__item"
+                class="form__input"
                 id="email"
                 placeholder="email@email.com"
                 required
@@ -150,11 +151,11 @@
                 Reservar uma mesa
               </button>
               <div class="form__checkbox">
-                <label class="form__item_el_checkbox" for="checkbox"
+                <label class="form__checkbox-label" for="checkbox"
                   >Eu concordo com os termos de uso</label
                 >
                 <input
-                  class="form__item-el-option"
+                  class="form__checkbox-input"
                   type="checkbox"
                   name="checkbox"
                   id="checkbox"
