@@ -190,7 +190,7 @@
 .reservation__title {
   justify-content: center;
   display: flex;
-  margin: auto;
+  margin: 0;
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
