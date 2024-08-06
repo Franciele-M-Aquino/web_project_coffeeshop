@@ -7,7 +7,6 @@
     <meta name="description" content="zona de estudo" />
     <meta name="keywords" content="Receitas, café, reserva" />
     <meta name="author" content="Franciele Medeiros" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -107,17 +106,17 @@
         <section id="reservation" class="reservation">
           <h2 class="reservation__title">Reservar uma mesa</h2>
           <form class="form reservation__form">
-            <fieldset class="reservation__fieldset">
-              <label for="name" class="reservation__label">Nome *</label>
+            <fieldset class="form__fieldset">
+              <label for="name" class="form__label">Nome *</label>
               <input
                 type="text"
                 name="name"
                 placeholder="Nome"
-                class="reservation__input"
+                class="form__input"
                 id="name"
                 required
               />
-              <label for="guestnumber" class="reservation__label"
+              <label for="guestnumber" class="form__label"
                 >Número de convidados *</label
               >
               <input
@@ -126,36 +125,36 @@
                 max="8"
                 name="guestnumber"
                 placeholder="1-8"
-                class="reservation__input"
+                class="form__input"
                 id="guestnumber"
                 required
               />
-              <label for="date" class="reservation__label">Data e hora *</label>
+              <label for="date" class="form__label">Data e hora *</label>
               <input
                 type="datetime-local"
                 name="date"
-                class="reservation__input"
+                class="form__input"
                 id="date"
                 required
               />
-              <label for="email" class="reservation__label">Seu e-mail *</label>
+              <label for="email" class="form__label">Seu e-mail *</label>
               <input
                 type="email"
                 name="email"
-                class="reservation__input"
+                class="form__input"
                 id="email"
                 placeholder="email@email.com"
                 required
               />
-              <button type="submit" class="reservation__button">
+              <button type="submit" class="form__button">
                 Reservar uma mesa
               </button>
-              <div class="reservation__checkbox">
-                <label class="reservation__checkbox-label" for="checkbox"
+              <div class="form__checkbox">
+                <label class="form__checkbox-label" for="checkbox"
                   >Eu concordo com os termos de uso</label
                 >
                 <input
-                  class="reservation__checkbox-input"
+                  class="form__checkbox-input"
                   type="checkbox"
                   name="checkbox"
                   id="checkbox"
@@ -166,7 +165,43 @@
           </form>
         </section>
       </main>
-      <footer id="contacts" class="footer"></footer>
+      <footer id="contacts" class="footer">
+        <div class="footer__content">
+          <div class="footer__logo">
+            <img
+              src="./images/logo_coffeeshop_light.svg"
+              alt="Logo tripleten"
+            />
+          </div>
+          <div class="footer__social">
+            <h3 class="footer__social-heading">Mídia Social</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__social-link">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/facebook_white.svg"
+                    alt="logo do facebook"
+                  />
+                  Facebook</a
+                >
+              </li>
+              <li class="footer__list footer__list-item--instagram">
+                <a href="#" class="footer__social-link">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/instagram_white.svg"
+                    alt="logo do instagram"
+                  />
+                  Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__circle"></div>
+        <p class="footer__copyright">© 2024 Franciele Medeiros</p>
+      </footer>
     </div>
   </body>
 </html>
